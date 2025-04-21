@@ -47,7 +47,7 @@ class MainActivity : AppCompatActivity() {
             var news = News(newsHeadingArray[i],newsImageArray[i])
             newArraylist.add(news)
         }
-        var myAdapter = MyAdapter(newArraylist)
+        var myAdapter = MyAdapter(newArraylist , this)
         myrecyclerview.adapter = myAdapter
 
     }
